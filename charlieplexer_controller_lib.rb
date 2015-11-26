@@ -1,15 +1,6 @@
 require 'bundler/setup'
 require 'dino'
 
-#initialize board
-board = Dino::Board.new(Dino::TxRx::Serial.new)
-pin_13 = Dino::Components::Led.new(pin: 13, board: board)
-pin_12 = Dino::Components::Led.new(pin: 12, board: board)
-pin_11 = Dino::Components::Led.new(pin: 11, board: board)
-pin_10 = Dino::Components::Led.new(pin: 10, board: board)
-pin_9 = Dino::Components::Led.new(pin: 9, board: board)
-pin_8 = Dino::Components::Led.new(pin: 8, board: board)
-pin_7 = Dino::Components::Led.new(pin: 7, board: board)
 
 class PinCushion
 	def initialize pin_13, pin_12, pin_11, pin_10, pin_9, pin_8, pin_7
